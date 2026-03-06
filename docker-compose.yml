@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  robochurch:
+    build: .
+    container_name: robochurch_app
+    ports:
+      - "3122:3000"
+    environment:
+      - NODE_ENV=production
+
